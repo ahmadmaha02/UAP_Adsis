@@ -1,5 +1,4 @@
 **Soal :**
-
 <img src="Screenshots/soaluap.jpg">
 
 Soal 1
@@ -62,32 +61,42 @@ sudo apt-key add jcameron-key.asc
 <img src="Screenshots/Soal 3/pgp.png">
 <img src="Screenshots/Soal 3/aptkey.png">
 
-3) Membuka webmin pada browser dan melakukan login
-<img src="Screenshots/Soal 3/login_page.png">
-<img src="Screenshots/Soal 3/dashboard.png">
+3) Selanjutnya, menginstall webmin menggunakan perintah apt-get install webmin.
+Namun, sebelum menjalankan perintah instalasi webmin, lakukan perintah apt-get
+update untuk memperbarui daftar paket.
+<img src="Screenshots/Soal 3/install.png">
 
-4) Membuat user baru
-<img src="Screenshots/Soal 3/making_user.png">
-<img src="Screenshots/Soal 3/making_user_done.png">
+4) Selanjutnya, membuka halaman webmin menggunakan alamat 192.168.56.20:10000
+<img src="Screenshots/Soal 3/login.png">
 
-5) Membuat grup baru
-<img src="Screenshots/Soal 3/making_group.png">
-<img src="Screenshots/Soal 3/making_group_done.png">
 
-6) Memasukkan user ke dalam grup
-<img src="Screenshots/Soal 3/change_primary_group.png">
-<img src="Screenshots/Soal 3/primary_group_changed.png">
+5) Lalu, membuat user baru dengan cara masuk ke halaman user and groups. Pada halaman
+ini, kita akan membuat user baru dengan cara menekan tombol “create new user” untuk
+membuat user baru, dan memasukkan nama user dengan nama “ahmads”
+<img src="Screenshots/Soal 3/createuser.png">
+<img src="Screenshots/Soal 3/listView.png">
+Dapat terlihat bahwa user “ahmads” sudah berhasil dibuat.
+
+6) Selanjutnya, membuat grup baru dengan nama “Adsis_E” dengan cara menekan tombol
+“create a new group”. Pada saat membuat grup, lakukan penambahan user yang
+sebelumnya telah dibuat, yaitu user “ahmads”
+<img src="Screenshots/Soal 3/groupadd.png">
+<img src="Screenshots/Soal 3/Grouplist.png">
+Dari gambar tersebut, dapat terlihat bahwa user “ahmads” sudah berada pada group
+“Adsis_E”
+
 
 Soal 4
 ------------------------------------------------
 
-1) Melakukan ping ke alamat IP
+1) Melakukan ping pada alamat IP 192.168.56.20
+<img src="Screenshots/Soal 4/ping.png">
 
 2) Membuat rule baru untuk melakukan reject kepada request paket bertipe ICMP
-<img src="Screenshots/Soal 4/adding_new_rule.png">
+<img src="Screenshots/Soal 4/rule.png">
 
 3) Setelah rule baru ditambahkan, ping akan mengalami packet loss karena telah di-reject
-<img src="Screenshots/Soal 4/ping.png">
+<img src="Screenshots/Soal 4/pinglast.png">
 
 Soal 5
 ------------------------------------------------
@@ -95,5 +104,5 @@ Soal 5
 1) Menjalankan perintah sudo crontab -e dan menuliskan perintah berikut untuk melakukan otomatisasi ping ke filkom.ub.ac.id
 <img src="Screenshots/Soal 5/crontab.png">
 
-2) Setelah itu, dapat dilihat bahwa perintah ping telah terotomatisasi
-<img src="Screenshots/Soal 5/result.png">
+2) Setelah itu, dapat dilihat bahwa perintah ping telah terotomatisasi setiap 3 menit
+<img src="Screenshots/Soal 5/aux.png">
